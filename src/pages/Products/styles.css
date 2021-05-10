@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.titlePro {
+  color: #546e7a !important;
+  font-weight: 500 !important;
+  padding-bottom: 0.8rem;
+}
+
+.couterUp {
+  opacity: 0;
+}
+
+.card {
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 2rem !important;
+  height: 355px;
+}
+
+.card:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card:hover .couterUp {
+  opacity: 1;
+}
+
+.card:hover div.box-area {
+  background: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  z-index: 5;
+  margin-top: -7rem;
+  animation-name: up;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.listPrice {
+  font-size: 1.3rem !important;
+  color: #546e7a;
+  font-weight: 600 !important;
+}
+.textProd {
+  color: #546e7a;
+  font-size: 17px !important;
+}
+.textDis {
+  color: #546e7a;
+  font-size: 15px !important;
+}
+
+@keyframes up {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
